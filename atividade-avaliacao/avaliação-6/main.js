@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const ponto_1 = require("./ponto");
+const quadrilatero_1 = require("./quadrilatero");
+let pontoA = new ponto_1.Ponto(0, 6);
+let pontoB = new ponto_1.Ponto(8, 0);
+let pontoC = new ponto_1.Ponto(5, 0);
+let pontoD = new ponto_1.Ponto(12, 10);
+let pontoE = new ponto_1.Ponto(8, 6);
+let Quad = new quadrilatero_1.Quadrilatero(pontoA, pontoB);
+console.log(Quad.pertencerArea(pontoC) ? "Ponto C está dentro do Quadrilátero" : "Ponto C não está dentro do Quadrilátero");
+console.log(Quad.pertencerArea(pontoD) ? "Ponto D está dentro do Quadrilátero" : "Ponto D não está dentro do Quadrilátero");
+console.log(Quad.pertencerArea(pontoE) ? "Ponto E está dentro do Quadrilátero" : "Ponto E não está dentro do Quadrilátero");
